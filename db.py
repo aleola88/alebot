@@ -1,7 +1,8 @@
 import requests
+import os
 
-SUPABASE_URL = "https://uunagymkizpspxfdmfbu.supabase.co"
-SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1bmFneW1raXpwc3B4ZmRtZmJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzODY3NjksImV4cCI6MjA2ODk2Mjc2OX0.d_j7ln82zF3ey9vllU1irzZ5pBBSeXoc0P2Cs63qVBs"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_API_KEY = os.getenv("SUPABASE_API_KEY")
 
 headers = {
     "apikey": SUPABASE_API_KEY,

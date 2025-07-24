@@ -8,7 +8,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
 import os
 
-TOKEN = os.getenv("8424750554:AAGhsvOwcRRDKUMMXnYAjtPLrnf5VeWpz_w")
+TOKEN = os.getenv("BOT_TOKEN")
 
 # States for conversation
 ASK_NAME, ASK_DAYS, ASK_TIME = range(3)
